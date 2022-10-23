@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+       C O M I C
+    </title>
+    <link href="static/stylesheets/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="todo-container">
+        <h2>
+            <%= comicData.safe_title %> 
+            <%= comicData.date %> 
+        </h2>
+        <p>
+            <%= comicData.transcript %> 
+        </p>
+
+        <img src="<%= comicData.img %>" alt="<%= comicData.alt %>" width="500" height="500" class="center" />
+    </div>
+</body>
